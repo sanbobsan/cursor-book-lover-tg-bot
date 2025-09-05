@@ -12,38 +12,37 @@ from app import json_loader as json
 router = Router()
 
 
-async def answer_book(message: Message, book: dict):
-    "Выводит сообщение с информацией о книге"
-    text = f"""
-📖 {book['title']}
-👤 {book['author']}
-🏷️ {book['genre']}
-⭐ {round(book['mark'], 2)}
-"""
-    await message.answer_photo(photo=book['image_url'], caption=text, reply_markup=kb.book)
-
-
 def get_text_with_rate(book: dict):
     "Возвращает сообщение с информацией о книге и рейтинге"
     marks = ""
     for n, mark in enumerate(book["marks"]):
-        mark = str(mark)
-        n += 1
-        marks += f"{str(mark)} -- {'⭐'*n}\n"
+        stars = "⭐️" * (n + 1)
+        marks += f"{stars} - {mark} оценок\n"
+    
     text = f"""
 📖 {book['title']}
 👤 {book['author']}
-🏷️ {book['genre']}
+🏷 {book['genre']}
+⭐️ Средний рейтинг: {round(book['mark'], 2)}/8
+📊 Всего оценок: {book['number_of_marks']}
+
+📈 Распределение оценок:
 {marks}
 """
     return text
     #await message.answer_photo(photo=book['image_url'], caption=text, reply_markup=kb.rate)
 
 
+async def answer_book(message: Message, book: dict):
+    text = get_text_with_rate(book)
+    await message.answer_photo(photo=book['image_url'], caption=text, reply_markup=kb.book)
 
-async def answer_books(message: Message, books: list):
+
+async def answer_books(message: Message, books: list, top=False):
     "Выводит сообщение с информацией о книгах"
     text = ""
+    if top:
+        text += "💛 Вот наш топ любимых книг ⤵️\n"
     for n, book in enumerate(books):
         text += f"{n + 1}. {book['title']} - {round(book['mark'], 2)} ⭐\n"
     await message.answer(text=text, reply_markup=kb.menu)
@@ -86,7 +85,7 @@ async def cmd_start(message: Message, state: FSMContext):
     text = """
 📖 Привет, книголюб!
 ✨ Я твой личный гайд по книгам!
-Здесь ты найдешь топ лучших книг, можешь найти книги по жанрам и названию📚/автору👤. 
+Здесь ты найдешь топ лучших книг, можешь найти книги по жанрам и 📚названию/автору👤. 
 Погружайся! Нажми кнопку меню для продолжения...
 """
     await message.answer(text=text, reply_markup=kb.to_menu)
@@ -108,10 +107,11 @@ async def menu(message: Message, state: FSMContext):
 #region States
 @router.message(F.text, FindBook.finding_by_genre)
 async def find_by_genre(message: Message, state: FSMContext):
-    genre = message.text.lower()
+    genre = message.text
     genres = json.get_all_genres()
-    if genre in [genre.lower() for genre in genres]: 
+    if genre.lower() in [genre.lower() for genre in genres]: 
         books = json.find_books_by_genre(genre)
+        await message.answer(f'🗳️ Вы выбрали "{genre}". Вот список всех книг с этим жанром ⤵️\n', reply_markup=kb.ok)
         await answer_books(message, books)
         await state.clear()
     else:
@@ -120,8 +120,8 @@ async def find_by_genre(message: Message, state: FSMContext):
 
 @router.message(F.text, FindBook.finding_by_title)
 async def find_by_title(message: Message, state: FSMContext):
-    title = message.text.lower()
-    book = json.find_book_by_title(title)
+    msg_text = message.text.lower()
+    book = json.find_book_by_title_author(msg_text)
     if book is not None:
         await answer_book(message, book)
         await state.set_state(FindBook.book)
@@ -134,7 +134,7 @@ async def find_by_title(message: Message, state: FSMContext):
 @router.message((F.text == "/top") | (F.text.lower() == "топ"))
 async def top(message: Message):
     books = json.get_top_of_books()[:10]
-    await answer_books(message, books)
+    await answer_books(message, books, True)
 
 
 @router.message((F.text == "/genre") | (F.text.lower() == "по жанрам"))

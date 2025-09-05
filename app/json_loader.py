@@ -22,6 +22,20 @@ def find_book_by_title(title: str, mode=0):
         return None
 
 
+def find_book_by_title_author(message: str):
+    """Возвращает найденную книгу"""
+    with open('books.json',encoding='utf-8') as file:
+        data = json.load(file)
+        msg = message.lower()
+        'нестрогий поиск'
+        for i in range(len(data)):
+            if  msg in data[i]['title'].lower().strip(" ,./?|!@#$%^&*()';:"):
+                return data[i]
+            if  msg in data[i]['author'].lower().strip(" ,./?|!@#$%^&*()';:"):
+                return data[i]
+        return None
+
+
 def find_books_by_genre(genre):
     "Возвращает список книг в зависимости от жанра"
     with open('books.json',encoding='utf-8') as file:

@@ -18,7 +18,7 @@ menu = ReplyKeyboardMarkup(keyboard=[
 genres = ReplyKeyboardBuilder()
 for genre in get_all_genres():
     genres.add(KeyboardButton(text=str(genre)))
-genres.adjust(6)
+genres.adjust(2)
 genres = genres.as_markup(resize_keyboard=True)
 
 

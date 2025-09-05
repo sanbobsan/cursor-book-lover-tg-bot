@@ -7,16 +7,16 @@
     "marks": [
       46,
       3,
-      26,
+      27,
       10,
       7,
       10,
       4,
       35
     ],
-    "mark": 1.9858156028368794,
-    "number_of_marks": 141,
-    "sum_of_marks": 280,
+    "mark": 1.9929577464788732,
+    "number_of_marks": 142,
+    "sum_of_marks": 283,
     "reviews": []
   },
   {
@@ -167,16 +167,16 @@
     "marks": [
       569,
       269,
-      670,
+      671,
       722,
       322,
       334,
       358,
       1460
     ],
-    "mark": 2.483418367346939,
-    "number_of_marks": 4704,
-    "sum_of_marks": 11682,
+    "mark": 2.483528161530287,
+    "number_of_marks": 4705,
+    "sum_of_marks": 11685,
     "reviews": []
   },
   {
@@ -540,26 +540,6 @@
     "reviews": []
   },
   {
-    "title": "Не верю. Не надеюсь. Люблю (Там, где заканчивается радуга)",
-    "author": "Сесилия Ахерн",
-    "genre": "Современная проза, Роман, О любви",
-    "image_url": "https://www.100bestbooks.ru/pictures/books/Ahern_Tam_gde_zakanchivaetsya_raduga.jpg",
-    "marks": [
-      29,
-      6,
-      4,
-      69,
-      9,
-      6,
-      2,
-      11
-    ],
-    "mark": 0.6470588235294118,
-    "number_of_marks": 136,
-    "sum_of_marks": 88,
-    "reviews": []
-  },
-  {
     "title": "Приключения Гекльберри Финна",
     "author": "Марк Твен",
     "genre": "Приключения, Роман, Классика",
@@ -847,16 +827,16 @@
     "marks": [
       177,
       22,
-      85,
+      86,
       175,
       113,
       318,
       43,
       517
     ],
-    "mark": 2.852413793103448,
-    "number_of_marks": 1450,
-    "sum_of_marks": 4136,
+    "mark": 2.852515506547209,
+    "number_of_marks": 1451,
+    "sum_of_marks": 4139,
     "reviews": []
   },
   {
@@ -1046,17 +1026,17 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Oliver_Prezhde_chem_ya_upadu.jpg",
     "marks": [
       7,
-      0,
+      1,
       9,
       4,
       3,
       2,
-      0,
+      1,
       10
     ],
-    "mark": 2.2857142857142856,
-    "number_of_marks": 35,
-    "sum_of_marks": 80,
+    "mark": 2.4054054054054053,
+    "number_of_marks": 37,
+    "sum_of_marks": 89,
     "reviews": []
   },
   {
@@ -1486,7 +1466,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/grin_alye_parusa.jpg",
     "marks": [
       1458,
-      110,
+      111,
       400,
       624,
       431,
@@ -1494,9 +1474,9 @@
       222,
       1577
     ],
-    "mark": 2.433172613307618,
-    "number_of_marks": 5185,
-    "sum_of_marks": 12616,
+    "mark": 2.4330890860007712,
+    "number_of_marks": 5186,
+    "sum_of_marks": 12618,
     "reviews": []
   },
   {
@@ -1525,7 +1505,7 @@
     "genre": "Приключения, Сказка, Фэнтези",
     "image_url": "https://www.100bestbooks.ru/pictures/books/Rowling_Harry_Potter.jpg",
     "marks": [
-      3311,
+      3312,
       372,
       265,
       450,
@@ -1534,9 +1514,9 @@
       234,
       2108
     ],
-    "mark": 2.2545454545454544,
-    "number_of_marks": 7480,
-    "sum_of_marks": 16864,
+    "mark": 2.2543777569843604,
+    "number_of_marks": 7481,
+    "sum_of_marks": 16865,
     "reviews": []
   },
   {
