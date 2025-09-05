@@ -31,7 +31,7 @@ book = book.as_markup()
 rate = InlineKeyboardBuilder()
 for i in range(1, 9):
     rate.add(InlineKeyboardButton(text=f"{str(i)} ⭐",
-                        callback_data="rated"))
+                        callback_data=f"rated-{i}"))
 rate.adjust(4)
 rate = rate.as_markup()
 

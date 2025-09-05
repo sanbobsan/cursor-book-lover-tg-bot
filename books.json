@@ -85,18 +85,18 @@
     "genre": "История, Повесть, О войне, Автобиография",
     "image_url": "https://www.100bestbooks.ru/pictures/books/Pikul_Malchiki_s_bantikami.jpg",
     "marks": [
-      203,
+      205,
       54,
-      35,
+      36,
       39,
       37,
       40,
       81,
       481
     ],
-    "mark": 3.9670103092783506,
-    "number_of_marks": 970,
-    "sum_of_marks": 3848,
+    "mark": 3.959917780061665,
+    "number_of_marks": 973,
+    "sum_of_marks": 3853,
     "reviews": []
   },
   {
@@ -166,7 +166,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Grant_Verne.jpg",
     "marks": [
       569,
-      268,
+      269,
       670,
       722,
       322,
@@ -174,9 +174,9 @@
       358,
       1460
     ],
-    "mark": 2.483521156708484,
-    "number_of_marks": 4703,
-    "sum_of_marks": 11680,
+    "mark": 2.483418367346939,
+    "number_of_marks": 4704,
+    "sum_of_marks": 11682,
     "reviews": []
   },
   {
@@ -226,7 +226,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Fraerman_Dikaya_sobaka_Dingo.jpeg",
     "marks": [
       29,
-      6,
+      7,
       31,
       127,
       73,
@@ -234,9 +234,9 @@
       14,
       222
     ],
-    "mark": 3.165775401069519,
-    "number_of_marks": 561,
-    "sum_of_marks": 1776,
+    "mark": 3.1637010676156585,
+    "number_of_marks": 562,
+    "sum_of_marks": 1778,
     "reviews": []
   },
   {
@@ -372,11 +372,11 @@
       1,
       1,
       0,
-      191
+      192
     ],
-    "mark": 3.6208530805687205,
-    "number_of_marks": 422,
-    "sum_of_marks": 1528,
+    "mark": 3.631205673758865,
+    "number_of_marks": 423,
+    "sum_of_marks": 1536,
     "reviews": []
   },
   {
@@ -386,7 +386,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Belyaev_Chelovek-Amfimiya.jpg",
     "marks": [
       762,
-      101,
+      102,
       142,
       678,
       472,
@@ -394,9 +394,9 @@
       165,
       1124
     ],
-    "mark": 2.3271221532091095,
-    "number_of_marks": 3864,
-    "sum_of_marks": 8992,
+    "mark": 2.3270375161707633,
+    "number_of_marks": 3865,
+    "sum_of_marks": 8994,
     "reviews": []
   },
   {
@@ -446,17 +446,17 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Salinger_The_Catcher_in_the_Rye.jpeg",
     "marks": [
       1425,
-      299,
+      300,
       499,
       695,
       282,
       377,
       254,
-      1339
+      1340
     ],
-    "mark": 2.071953578336557,
-    "number_of_marks": 5170,
-    "sum_of_marks": 10712,
+    "mark": 2.0730858468677495,
+    "number_of_marks": 5172,
+    "sum_of_marks": 10722,
     "reviews": []
   },
   {
@@ -508,15 +508,15 @@
       107,
       17,
       32,
-      102,
+      103,
       23,
       22,
       8,
       57
     ],
-    "mark": 1.2391304347826086,
-    "number_of_marks": 368,
-    "sum_of_marks": 456,
+    "mark": 1.2466124661246611,
+    "number_of_marks": 369,
+    "sum_of_marks": 460,
     "reviews": []
   },
   {
@@ -586,7 +586,7 @@
     "image_url": "https://i.pinimg.com/originals/11/56/95/115695b0016cd7c8a29f5e252ba917a7.jpg",
     "marks": [
       0,
-      0,
+      1,
       0,
       0,
       0,
@@ -594,9 +594,9 @@
       0,
       1
     ],
-    "mark": 8.0,
-    "number_of_marks": 1,
-    "sum_of_marks": 8,
+    "mark": 5.0,
+    "number_of_marks": 2,
+    "sum_of_marks": 10,
     "reviews": []
   },
   {
@@ -611,12 +611,12 @@
       6,
       2,
       3,
-      1,
+      2,
       53
     ],
-    "mark": 4.198019801980198,
-    "number_of_marks": 101,
-    "sum_of_marks": 424,
+    "mark": 4.2254901960784315,
+    "number_of_marks": 102,
+    "sum_of_marks": 431,
     "reviews": []
   },
   {
@@ -686,7 +686,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Riggs_Miss_Peregrine.jpg",
     "marks": [
       2,
-      1,
+      2,
       3,
       4,
       0,
@@ -694,9 +694,9 @@
       0,
       24
     ],
-    "mark": 5.647058823529412,
-    "number_of_marks": 34,
-    "sum_of_marks": 192,
+    "mark": 5.542857142857143,
+    "number_of_marks": 35,
+    "sum_of_marks": 194,
     "reviews": []
   },
   {
@@ -706,7 +706,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Collins_The_Hunger_Games.jpg",
     "marks": [
       178,
-      228,
+      229,
       39,
       38,
       12,
@@ -714,9 +714,9 @@
       29,
       141
     ],
-    "mark": 2.8153846153846156,
-    "number_of_marks": 520,
-    "sum_of_marks": 1464,
+    "mark": 2.8138195777351247,
+    "number_of_marks": 521,
+    "sum_of_marks": 1466,
     "reviews": []
   },
   {
@@ -910,13 +910,13 @@
       131,
       129,
       35,
-      62,
+      63,
       26,
       248
     ],
-    "mark": 2.4862155388471177,
-    "number_of_marks": 798,
-    "sum_of_marks": 1984,
+    "mark": 2.490613266583229,
+    "number_of_marks": 799,
+    "sum_of_marks": 1990,
     "reviews": []
   },
   {
@@ -1006,7 +1006,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Rasputin_Uroki_frantsuzskogo.jpg",
     "marks": [
       281,
-      27,
+      28,
       114,
       304,
       221,
@@ -1014,9 +1014,9 @@
       171,
       561
     ],
-    "mark": 2.38850452368281,
-    "number_of_marks": 1879,
-    "sum_of_marks": 4488,
+    "mark": 2.3882978723404253,
+    "number_of_marks": 1880,
+    "sum_of_marks": 4490,
     "reviews": []
   },
   {
@@ -1027,16 +1027,16 @@
     "marks": [
       711,
       204,
-      326,
+      327,
       471,
       224,
       623,
       154,
       1046
     ],
-    "mark": 2.226123969140729,
-    "number_of_marks": 3759,
-    "sum_of_marks": 8368,
+    "mark": 2.2263297872340426,
+    "number_of_marks": 3760,
+    "sum_of_marks": 8371,
     "reviews": []
   },
   {
@@ -1071,12 +1071,12 @@
       3,
       3,
       1,
-      0,
+      1,
       4
     ],
-    "mark": 2.2857142857142856,
-    "number_of_marks": 14,
-    "sum_of_marks": 32,
+    "mark": 2.6,
+    "number_of_marks": 15,
+    "sum_of_marks": 39,
     "reviews": []
   },
   {
@@ -1107,16 +1107,16 @@
     "marks": [
       12,
       1,
-      7,
+      8,
       8,
       2,
       10,
       1,
       38
     ],
-    "mark": 3.848101265822785,
-    "number_of_marks": 79,
-    "sum_of_marks": 304,
+    "mark": 3.8375,
+    "number_of_marks": 80,
+    "sum_of_marks": 307,
     "reviews": []
   },
   {
@@ -1127,16 +1127,16 @@
     "marks": [
       192,
       4,
-      17,
+      18,
       106,
       20,
       8,
       7,
       233
     ],
-    "mark": 3.1754684838160134,
-    "number_of_marks": 587,
-    "sum_of_marks": 1864,
+    "mark": 3.175170068027211,
+    "number_of_marks": 588,
+    "sum_of_marks": 1867,
     "reviews": []
   },
   {
@@ -1191,12 +1191,12 @@
       2,
       0,
       3,
-      1,
+      2,
       150
     ],
-    "mark": 3.7974683544303796,
-    "number_of_marks": 316,
-    "sum_of_marks": 1200,
+    "mark": 3.807570977917981,
+    "number_of_marks": 317,
+    "sum_of_marks": 1207,
     "reviews": []
   },
   {
@@ -1225,7 +1225,7 @@
     "genre": "Приключения, Рассказ",
     "image_url": "https://i.pinimg.com/originals/11/56/95/115695b0016cd7c8a29f5e252ba917a7.jpg",
     "marks": [
-      193,
+      194,
       2,
       10,
       106,
@@ -1234,9 +1234,9 @@
       23,
       477
     ],
-    "mark": 4.371134020618556,
-    "number_of_marks": 873,
-    "sum_of_marks": 3816,
+    "mark": 4.367276887871854,
+    "number_of_marks": 874,
+    "sum_of_marks": 3817,
     "reviews": []
   },
   {
@@ -1366,7 +1366,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/ThePrinceAndThePauper.jpg",
     "marks": [
       222,
-      151,
+      152,
       186,
       454,
       313,
@@ -1374,9 +1374,9 @@
       139,
       722
     ],
-    "mark": 2.376954732510288,
-    "number_of_marks": 2430,
-    "sum_of_marks": 5776,
+    "mark": 2.376799670917318,
+    "number_of_marks": 2431,
+    "sum_of_marks": 5778,
     "reviews": []
   },
   {
@@ -1385,7 +1385,7 @@
     "genre": "Сказка, Приключения",
     "image_url": "https://i.pinimg.com/originals/11/56/95/115695b0016cd7c8a29f5e252ba917a7.jpg",
     "marks": [
-      0,
+      1,
       0,
       0,
       0,
@@ -1394,9 +1394,9 @@
       0,
       2
     ],
-    "mark": 8.0,
-    "number_of_marks": 2,
-    "sum_of_marks": 16,
+    "mark": 5.666666666666667,
+    "number_of_marks": 3,
+    "sum_of_marks": 17,
     "reviews": []
   },
   {
@@ -1586,7 +1586,7 @@
     "image_url": "https://www.100bestbooks.ru/pictures/books/Chbosky_Horosho_byt_tihoney.jpg",
     "marks": [
       5,
-      2,
+      3,
       8,
       3,
       0,
@@ -1594,9 +1594,9 @@
       0,
       8
     ],
-    "mark": 2.1333333333333333,
-    "number_of_marks": 30,
-    "sum_of_marks": 64,
+    "mark": 2.129032258064516,
+    "number_of_marks": 31,
+    "sum_of_marks": 66,
     "reviews": []
   },
   {

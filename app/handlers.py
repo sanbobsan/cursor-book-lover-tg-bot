@@ -28,9 +28,11 @@ def get_text_with_rate(book: dict):
     marks = ""
     for n, mark in enumerate(book["marks"]):
         mark = str(mark)
-        mark += f"{"⭐"*n} - {str(mark)}\n"
+        n += 1
+        marks += f"{str(mark)} -- {'⭐'*n}\n"
     text = f"""
-📖 {book['title']} 👤 {book['author']}
+📖 {book['title']}
+👤 {book['author']}
 🏷️ {book['genre']}
 {marks}
 """
@@ -56,26 +58,26 @@ class FindBook(StatesGroup):
 #region Callbacks
 @router.callback_query(F.data == "delete")
 async def delete(callback: CallbackQuery):
-    callback.message.delete()
+    await callback.message.delete()
 
 
 @router.callback_query(F.data == "rating", FindBook.book)
 async def rating(callback: CallbackQuery, state: FSMContext):
     book = (await state.get_data())["book"]
-    text = get_text_with_rate(book)
     await callback.message.edit_caption(reply_markup=kb.rate)
 
 
-@router.callback_query(F.data == "rated", FindBook.book)
+@router.callback_query(lambda c: c.data and c.data.startswith("rated"), FindBook.book)
 async def rated(callback: CallbackQuery, state: FSMContext):
     book = (await state.get_data())["book"]
-    
+    rate = int((callback.data.split("-"))[-1])
+    json.add_book_rating(book, rate)
+    book = json.find_book_by_title(book["title"])
     text = get_text_with_rate(book)
-    json.add_book_rating(book, )
+    await state.clear()
     await callback.message.delete()
     await callback.message.answer(text="Оценка добавлена!", reply_markup=kb.ok)
-    await callback.message.answer(text=text, reply_markup=kb.menu)
-    await state.clear()
+    await callback.message.answer_photo(photo=book["image_url"], caption=text, reply_markup=kb.menu)
 #endregion
 
 

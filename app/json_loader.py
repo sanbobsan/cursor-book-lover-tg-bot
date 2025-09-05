@@ -66,7 +66,7 @@ def get_all_genres():
         return json.load(f)
 
 
-def add_book_rating(title: str, rating: int):
+def add_book_rating(book: dict, rating: int):
     """
     Добавляет оценку книге и обновляет агрегаты в JSON.
     Возвращает обновленный объект книги или None, если книга не найдена
@@ -74,6 +74,7 @@ def add_book_rating(title: str, rating: int):
     with open('books.json', encoding='utf-8') as file:
         data = json.load(file)
 
+    title = book["title"]
     normalized_title = title.strip().lower()
     updated = None
 
